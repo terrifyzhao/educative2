@@ -5,13 +5,11 @@ class Node:
 
 
 def has_cycle(head):
-    slow = head
-    fast = head
+    fast, slow = head, head
     while fast and fast.next:
-        
         slow = slow.next
         fast = fast.next.next
-        if slow == fast:
+        if fast == slow:
             return True
 
     return False
