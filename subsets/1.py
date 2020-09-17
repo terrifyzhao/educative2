@@ -6,7 +6,6 @@ def find_subsets(nums):
             sub = list(subsets[i])
             sub.append(num)
             subsets.append(sub)
-
     return subsets
 
 
